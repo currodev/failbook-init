@@ -15,7 +15,24 @@
 
 	<div class="container">
 
-		<div id="stream">
+		<div id="minibio" class="col-4 float-left">
+			<div id="me" class="text-center">
+				<div class="photo">
+					<img src="${pageContext.request.contextPath}/img/avatar128.png"
+						alt="Avatar" class="rounded-circle">
+				</div>
+				<div class="name"></div>
+				<div class="motto"></div>
+			</div>
+			<div id="about">
+				<div>About</div>
+				<div id="company"></div>
+				<div id="country"></div>
+				<div id="interest"></div>
+			</div>
+		</div>
+
+		<div id="stream" class="col-8 float-right">
 			<div id="share_post">
 				<input type="text" id="your_post"
 					class="form-control form-control-lg" placeholder="Share something" />
@@ -35,5 +52,5 @@
 	</div>
 
 	<%@ include file="/jsp/common/jslibs.jsp"%>
-	<script type="text/javascript" src="home.js"></script>
+	<script type="text/javascript" src="profile.js"></script>
 	<%@ include file="/jsp/common/footer.jsp"%>

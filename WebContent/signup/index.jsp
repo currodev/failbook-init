@@ -8,13 +8,14 @@
 	<div class="container">
 		<form class="form-signup">
 			<div class="text-center mb-4">
-				<a href="${pageContext.request.contextPath}/"> <img
-					class="mb-4" src="${pageContext.request.contextPath}/img/logo.png"
-					alt="" width="72" height="72">
+				<a href="${pageContext.request.contextPath}/"> <img class="mb-4"
+					src="${pageContext.request.contextPath}/img/logo.png" alt=""
+					width="72" height="72">
 				</a>
 				<h1 class="h3 mb-3 font-weight-normal">Sign up</h1>
 			</div>
-			<div id="signup-result" class="alert text-center"></div>
+			<div id="signup-result" class="alert text-center">
+			</div>
 			<div class="form-row">
 				<div class="form-label-group col-md-6">
 					<input type="email" id="inputEmail" name="inputEmail"
@@ -71,7 +72,8 @@
 				</div>
 			</div>
 
-			<button id="buttonSignup" class="btn btn-lg btn-primary" type="button">Sign up</button>
+			<button id="buttonSignup" class="btn btn-lg btn-primary"
+				type="button">Sign up</button>
 			<p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
 		</form>
 		<div class="text-center">

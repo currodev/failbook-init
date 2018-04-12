@@ -15,13 +15,11 @@
 
 	<div class="container">
 
-		<div id="stream">
-			<div id="share_post">
-				<input type="text" id="your_post"
-					class="form-control form-control-lg" placeholder="Share something" />
-			</div>
-			<ul class="list-unstyled">
-				<!-- 
+		<div id="search-term">
+			<span></span>
+		</div>
+		<ul id="search-results" class="list-unstyled">
+			<!-- 
 				<li class="media post"><img class="mr-3 rounded-circle"
 					src="${pageContext.request.contextPath}/img/avatar64.png"
 					alt="Avatar">
@@ -29,11 +27,9 @@
 						<span class="mt-0 mb-1 name">Name</span>
 						<div class="post_content">Lorem ipsum</div>
 					</div></li>  -->
-			</ul>
-		</div>
-
+		</ul>
 	</div>
 
 	<%@ include file="/jsp/common/jslibs.jsp"%>
-	<script type="text/javascript" src="home.js"></script>
+	<script type="text/javascript" src="search.js"></script>
 	<%@ include file="/jsp/common/footer.jsp"%>

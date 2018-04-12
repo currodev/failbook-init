@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ include file="/jsp/common/header.jsp"%>
@@ -14,7 +15,11 @@
 				</a>
 				<h1 class="h3 mb-3 font-weight-normal">Login</h1>
 			</div>
-			<div id="signup-result" class="alert text-center"></div>
+			<div id="signup-result" class="alert text-center">
+			<c:if test="${param.signup==1}">
+			Registration ok. Please, sign in.
+			</c:if>
+			</div>
 			<div class="form-label-group">
 				<input type="email" id="inputEmail" class="form-control"
 					placeholder="Email address" required autofocus> <label
@@ -41,4 +46,5 @@
 		</div>
 	</div>
 	<%@ include file="/jsp/common/jslibs.jsp"%>
+	<script type="text/javascript" src="login.js"></script>
 	<%@ include file="/jsp/common/footer.jsp"%>

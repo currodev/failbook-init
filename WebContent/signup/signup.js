@@ -19,11 +19,10 @@ function signUp() {
 		"motto" : $("#inputMotto").val(),
 		"interest" : $("#inputInterest").val(),
 	}
+
 	var req = sendAPIRequest("User", "POST", data);
 	req.done(function(response) {
-		$("#signup-result").removeClass("alert-danger");
-		$("#signup-result").addClass("alert-success");
-		$("#signup-result").text(response.message);
+		window.location.href = response.message;
 	});
 	req.fail(function(response) {
 		var message = getMessageFromErrorResponse(response);
